@@ -22,7 +22,7 @@
   text-align: center;
   font-size: 28px;
   padding: 20px;
-  width: 200px;
+  width: 100%;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
@@ -52,6 +52,45 @@
   opacity: 1;
   right: 0;
 }
+	
+	.quarterButton {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.quarterButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.quarterButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.quarterButton:hover span {
+  padding-right: 25px;
+}
+
+.quarterButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 		
 
 	
@@ -67,7 +106,7 @@ body {
 	
 <center><br><a href="https://www.youtube.com/kaylerr"><button class="button"><span>Youtube Channel</span></button></a> 
 <center><br><a href="https://discord.com/invite/FfU8XHGRRe"><button class="button"><span>Discord Server</span></button></a> 
-<center><br><a href="https://www.patreon.com/kaylerr"><button class="button"><span>Patreon</span></button></a> 
 <center><br><a href="https://kaylerr.itch.io"><button class="button"><span>Video Games</span></button></a> 
-<center><br><a href="https://twitter.com/kaylerrwastaken"><button class="button"><span>Twitter</span></button></a>
-	<center><br><a href="https://kaylerr.newgrounds.com"><button class="button"><span>Newgrounds Page</span></button></a> 
+<center><br><a href="https://www.patreon.com/kaylerr"><button class="button"><span>Patreon</span></button></a> 
+<center><br><a href="https://twitter.com/kaylerrwastaken"><button class="quarterButton"><span>Twitter</span></button></a>
+<center><br><a href="https://kaylerr.newgrounds.com"><button class="quarterButton"><span>Newgrounds</span></button></a> 
